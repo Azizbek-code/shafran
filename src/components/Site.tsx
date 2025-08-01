@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Droplets, Leaf, Star, ShoppingCart } from 'lucide-react';
 
 const ShafranLanding = () => {
@@ -63,7 +63,6 @@ const ShafranLanding = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${
         scrollY > 50 ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}>
@@ -73,7 +72,6 @@ const ShafranLanding = () => {
               Shafran
             </div>
             
-            {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
               {['Home', 'About', 'Products', 'Contact'].map((item) => (
                 <button
@@ -92,7 +90,6 @@ const ShafranLanding = () => {
               </button>
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               className="md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -101,7 +98,6 @@ const ShafranLanding = () => {
             </button>
           </div>
 
-          {/* Mobile Menu */}
           {isMenuOpen && (
             <div className="md:hidden bg-white/95 backdrop-blur-md absolute top-full left-0 w-full shadow-lg">
               <div className="px-4 py-6 space-y-4">
@@ -120,7 +116,6 @@ const ShafranLanding = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <section id="home" className="min-h-screen bg-gradient-to-br from-green-50 via-yellow-50 to-green-100 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-72 h-72 bg-green-200/30 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
@@ -179,7 +174,6 @@ const ShafranLanding = () => {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8">
@@ -215,7 +209,6 @@ const ShafranLanding = () => {
         </div>
       </section>
 
-      {/* Products Section */}
       <section id="products" className="py-20 bg-gradient-to-br from-gray-50 to-green-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-16">
@@ -246,7 +239,6 @@ const ShafranLanding = () => {
         </div>
       </section>
 
-      {/* Order Section */}
       <section id="order" className="py-20 bg-gradient-to-r from-green-500 to-green-400">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
@@ -267,7 +259,6 @@ const ShafranLanding = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-16">
@@ -302,7 +293,6 @@ const ShafranLanding = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="text-2xl font-bold text-green-400 mb-4">Shafran</div>
